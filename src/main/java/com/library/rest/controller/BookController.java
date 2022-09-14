@@ -1,4 +1,4 @@
-package com.library.library;
+package com.library.rest.controller;
 
 import java.util.List;
 
@@ -11,6 +11,9 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
+
+import com.library.persistene.Book;
+import com.library.service.BookService;
 
 @RestController
 public class BookController {
