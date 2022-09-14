@@ -17,6 +17,10 @@ public class Book {
     private String author;
     @Column
     private boolean avaible;
+
+    public Book(){
+        super();
+    }
     
     public Book(long id, String title, String author, boolean avaible) {
         this.id = id;
