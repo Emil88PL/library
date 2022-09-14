@@ -25,17 +25,19 @@ public class BookService {
         return this.repo.findAll();
     }
 
-    public Book updateBook(Long id, Book newBook) {
+    public Book updateBook(long id, Book newBook) {
         Optional<Book> existingOptional = this.repo.findById(id);
         Book existing = existingOptional.get();
 
-        
+        existing.setId(newBook.getId());
+        existing.setTitle(newBook.getTitle());
         existing.setAuthor(newBook.getAuthor());
+        existing.setAvaible(newBook.isAvaible());
 
         return this.repo.save(existing);
     }
 
-    public boolean removeBook(Long id) {
+    public boolean removeBook(long id) {
         // removes the entity
         this.repo.deleteById(id);
         // checks to see if it still exists
