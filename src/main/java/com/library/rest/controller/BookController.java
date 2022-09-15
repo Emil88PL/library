@@ -18,7 +18,7 @@ import com.library.persistene.Book;
 import com.library.service.BookService;
 
 @RestController
-@RequestMapping("/book")
+//@RequestMapping("/book")
 public class BookController {
 
     private BookService service;
