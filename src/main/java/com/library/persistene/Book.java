@@ -1,6 +1,6 @@
 package com.library.persistene;
 
-import java.util.function.IntPredicate;
+//import java.util.function.IntPredicate;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
