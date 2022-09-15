@@ -1,5 +1,7 @@
 package com.library.persistene;
 
+import java.util.function.IntPredicate;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -53,4 +55,5 @@ public class Book {
     public void setAvaible(boolean avaible) {
         this.avaible = avaible;
     }
+
 }

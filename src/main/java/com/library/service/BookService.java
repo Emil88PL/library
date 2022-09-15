@@ -1,6 +1,7 @@
 package com.library.service;
 
 
+
 import org.springframework.stereotype.Service;
 
 import com.library.persistene.Book;
@@ -48,4 +49,11 @@ public class BookService {
         // returns true if entity no longer exists
         return !exists;
     }
+
+    public Object create(Book tEST_Book) {
+        return null;
+    }
+
+  
+
 }
