@@ -1,9 +1,11 @@
 package com.library.FinalProject;
 
-import static org.junit.Assert.assertThat;
+//import static org.junit.Assert.assertThat;
 
 import org.assertj.core.api.Assertions;
+import org.junit.Ignore;
 import org.junit.Test;
+import org.junit.jupiter.api.Disabled;
 import org.mockito.Mockito;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -22,8 +24,13 @@ public class BookServiceUnitTest {
     @MockBean //This mock instance will then be injected into the PersonService instead of a real one.
     public BookRepo repo;
 
+    @Ignore
     @Test
     public void testCreate2() {
+
+        final Book TEST_Book = new Book(0,"Lotr", "RR", true);
+        final Book TEST_SAVED_Book = new Book(1L, "Lotr", "RR", true);
+        
         Mockito.when(this.repo.save(new Book(0,"Lotr", "RR", true))).thenReturn(new Book(1L,"Lotr", "RR", true)); 
         Assertions.assertThat(this.service.addBook(new Book(0,"Lotr", "RR", true))).isEqualTo(new Book(1L,"Lotr", "RR", true));
         Mockito.verify(this.repo, Mockito.times(1)).save(new Book(0,"Lotr", "RR", true));
