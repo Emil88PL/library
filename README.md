@@ -1,5 +1,5 @@
 ## Why are we doing this?
-  ###### -To showcase connectin to a database and CRUD functionality 
+  ###### -To showcase connectin to a database and CRUD functionality in JAVA
 ## How I expected the challenge to go.
   ###### -Quick and with no problems
 ## What went well? / What didn't go as planned?
