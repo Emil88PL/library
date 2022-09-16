@@ -1,24 +1,31 @@
-Why are we doing this?
-To showcase connectin to a database and CRUD functionality 
-How I expected the challenge to go.
-Quick and with no problems
-What went well? / What didn't go as planned?
-Setting up Jira - that help a lot / Need to spend more on Testing
-Possible improvements for future revisions of the project.
-Testing/Comments
-Screenshots showing your postman requests and the output from the API.
+## Why are we doing this?
+  ###### -To showcase connectin to a database and CRUD functionality 
+## How I expected the challenge to go.
+  ###### -Quick and with no problems
+## What went well? / What didn't go as planned?
+  ###### -Setting up Jira - that help a lot / Need to spend more on Testing
+## Possible improvements for future revisions of the project.
+ ###### -Testing/Comments
+## Screenshots showing your postman requests and the output from the API.
+
 First we check if we can read database
 ![1](https://user-images.githubusercontent.com/20727668/190642595-e8e3be3b-3f4b-4116-930e-ff35d19facb9.png)
+
 Then we can creating new entry in database
 ![2](https://user-images.githubusercontent.com/20727668/190642623-5e75af9c-dc84-4186-9cd5-f051db32969b.png)
+
 Checking if is actually added to database
 ![3](https://user-images.githubusercontent.com/20727668/190642649-f2bef8a6-b4d6-48e6-854f-96bc8336a285.png)
+
 We can update
 ![4](https://user-images.githubusercontent.com/20727668/190642660-1b6ca182-bb76-463a-a76a-7bc144701592.png)
+
 Check if is actually have updated
 ![5](https://user-images.githubusercontent.com/20727668/190642674-03fc8215-2968-491a-8679-9e7d2b8bf2ba.png)
+
 Then we can Deleted to check full working CRUD
 ![6](https://user-images.githubusercontent.com/20727668/190642695-101c8627-a0b5-4473-9018-6f270ff6abe1.png)
+
 Then we can check if is actually deleted
 ![7](https://user-images.githubusercontent.com/20727668/190642703-4fd09ffc-6833-42de-987b-9aa2576445e7.png)
 
