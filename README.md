@@ -1,11 +1,11 @@
 Why are we doing this?
--
+To showcase connectin to a database and CRUD functionality 
 How I expected the challenge to go.
--
+Quick and with no problems
 What went well? / What didn't go as planned?
--
+Setting up Jira - that help a lot / Need to spend more on Testing
 Possible improvements for future revisions of the project.
--
+Testing/Comments
 Screenshots showing your postman requests and the output from the API.
 First we check if we can read database
 ![1](https://user-images.githubusercontent.com/20727668/190642595-e8e3be3b-3f4b-4116-930e-ff35d19facb9.png)
