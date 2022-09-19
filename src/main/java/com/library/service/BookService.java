@@ -31,7 +31,7 @@ public class BookService {
         return this.repo.findAll();
     }
 
-    public Book updateBook(Long id, Book newBook) {
+    public Book updateBook(Long id, Book newBook) {   // Long
         Optional<Book> existingOptional = this.repo.findById(id);
         Book existing = existingOptional.get();
 

@@ -38,7 +38,7 @@ public class BookController {
         return this.service.getallBooks();
     }
 
-    @PutMapping("/update")
+    @PutMapping("/update") // Long
     public Book updateBook(@PathParam("id") Long id, @RequestBody Book book) {
         return this.service.updateBook(id, book);
     }

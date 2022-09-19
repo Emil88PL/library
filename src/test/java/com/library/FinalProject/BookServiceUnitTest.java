@@ -12,7 +12,7 @@ import static org.junit.Assert.assertThat;
 import org.assertj.core.api.Assertions;
 import org.junit.Before;
 import org.junit.Ignore;
-//import org.junit.Test;
+//import org.junit.Test; // Return Null !!!
 //import org.junit.jupiter.api.Disabled;
 import org.mockito.Mockito;
 import org.mockito.MockitoAnnotations;
@@ -26,6 +26,7 @@ import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.MvcResult;
 import org.springframework.test.web.servlet.RequestBuilder;
 import org.springframework.test.web.servlet.ResultMatcher;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -43,10 +44,14 @@ public class BookServiceUnitTest {
     @MockBean //This mock instance will then be injected into the PersonService instead of a real one.
     public BookRepo repo;
 
-    
+    final List<Book> BOOK = List.of(new Book(null,"Lotr", "RR", true), new Book( 1L, "Lotr", "RR", true));
 
+    @BeforeEach
+    public void init(){
+        repo.saveAll(BOOK);
+    }
 
-    //@Ignore
+    @Ignore
     @Test
     public void testCreate2() {
 
