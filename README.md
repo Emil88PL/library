@@ -34,7 +34,8 @@
 
 **Risk assessment**
 ![Risk assessment](https://user-images.githubusercontent.com/20727668/190627561-c0561241-b4d4-4a7b-8584-4aec946bfd22.png)
-~~**Screenshot of your test results, including coverage report**~~ -Test
+
+~~**Screenshot of your test results, including coverage report**~~ - creating .jar File
 ![TEST v0 002](https://user-images.githubusercontent.com/20727668/190650015-5e654828-dc75-433a-9f52-b64f48df588f.png)
 
 
