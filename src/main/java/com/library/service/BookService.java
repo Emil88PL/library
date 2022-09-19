@@ -25,11 +25,13 @@ public class BookService {
         return this.repo.save(book);
     }
 
+
+
      public List<Book> getallBooks() {
         return this.repo.findAll();
     }
 
-    public Book updateBook(long id, Book newBook) {
+    public Book updateBook(Long id, Book newBook) {
         Optional<Book> existingOptional = this.repo.findById(id);
         Book existing = existingOptional.get();
 
@@ -41,12 +43,12 @@ public class BookService {
         return this.repo.save(existing);
     }
 
-    public boolean removeBook(long id) {
+    public boolean removeBook(Long id) {
         // removes the entity
         this.repo.deleteById(id);
         // checks to see if it still exists
         boolean exists = this.repo.existsById(id);
-        // returns true if entity no longer exists
+        // returns true if entity no Longer exists
         return !exists;
     }
 

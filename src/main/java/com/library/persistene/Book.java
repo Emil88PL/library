@@ -13,7 +13,7 @@ public class Book {
     
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
+    private Long id;
     @Column
     private String title;
     @Column
@@ -25,16 +25,16 @@ public class Book {
         super();
     }
     
-    public Book(long id, String title, String author, boolean avaible) {
+    public Book(Long id, String title, String author, boolean avaible) {
         this.id = id;
         this.title = title;
         this.author = author;
         this.avaible = avaible;
     }
-    public long getId() {
+    public Long getId() {
         return id;
     }
-    public void setId(long id) {
+    public void setId(Long id) {
         this.id = id;
     }
     public String getTitle() {

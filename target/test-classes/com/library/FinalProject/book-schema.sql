@@ -1,0 +1,1 @@
+INSERT INTO 'book' (id, title, author, avaible) VALUES (0, 'Lotr', 'RR', 1);
